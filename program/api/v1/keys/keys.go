@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/etcd-manage/etcd-manage-server/program/common"
+	"etcd-manage-server/program/common"
 	"github.com/gin-gonic/gin"
 )
 

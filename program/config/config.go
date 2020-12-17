@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"github.com/etcd-manage/etcd-manage-server/program/common"
+	"etcd-manage-server/program/common"
 	"github.com/naoina/toml"
 )
 

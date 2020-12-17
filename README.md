@@ -10,12 +10,18 @@ etcd-manage 是一个用go编写的etcd管理工具，具有友好的界面(类�
 **备注**
 
 1. 用helm部署时注意修改mysql连接相关信息，可不修改使用默认安装直接使用
-2. 将sql文件导入到mysql数据库，默认用户 admin/111111 [etcd-manage.sql](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/sql/etcd-manage.sql)
+2. 将sql文件导入到mysql数据库，默认用户 admin/123456 [etcd-manage.sql]
 3. 此程序为2.0版本，实现1.0功能 1.0项目地址 [https://github.com/shiguanghuxian/etcd-manage](https://github.com/shiguanghuxian/etcd-manage)
 4. 下一步开发对中英双语言做全面支持，当前对中文支持友好。
 5. 当前只实现了etcd v3 api管理key v2在路上。
 6. 在使用时可直接修改默认的两个etcd连接地址为真实可用地址即可开始体验。
 
+## Docker镜像快速安装
+
+```shell
+docker pull shiguanghuxian/etcd-manage:2.0.0
+
+```
 
 ## HELM 安装使用
 
@@ -53,7 +59,7 @@ my-etcd-manage-mysql-5577cd9b-4nqr2   1/1     Running   0          25s
 
 执行完 NOTES 中提示命令的命令即可在浏览器中访问 `http://127.0.0.1:10280/ui` 查看。注意url端口后边路径为/ui
 
-默认用户 admin/111111
+默认用户 admin/123456
 
 如果NOTES命令执行错误可执行
 
@@ -76,28 +82,6 @@ helm install my-etcd-manage etcd-manage --set database.address="你的数据库i
 |  database.address | mysql数据库地址 | 192.168.1.88 |
 |  database.port | mysql数据库端口 | 3306 |
 |  database.user | mysql用户名 | root |
-|  database.passwd | mysql用户密码 | z123456 |
+|  database.passwd | mysql用户密码 | 123456 |
 |  database.db_name | 导入etcd-manage.sql的数据库 | etcd-manage |
 
-
-## 效果演示
-
-etcd服务列表管理
-
-![](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/imgs/etcd-server.png)
-
-key 管理
-
-![](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/imgs/keys.png)
-
-key 编辑
-
-![](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/imgs/key-edit.png)
-
-key 查看
-
-![](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/imgs/key-show.png)
-
-用户管理
-
-![](https://raw.githubusercontent.com/cloudnativeapp/charts/master/submitted/etcd-manage/imgs/user.png)

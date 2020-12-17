@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/etcd-manage/etcd-manage-server/program/models"
+	"etcd-manage-server/program/models"
 	"github.com/gin-gonic/gin"
 )
 

@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/etcd-manage/etcd-manage-server/program/cache"
-	"github.com/etcd-manage/etcd-manage-server/program/common"
-	"github.com/etcd-manage/etcd-manage-server/program/logger"
-	"github.com/etcd-manage/etcd-manage-server/program/models"
+	"etcd-manage-server/program/cache"
+	"etcd-manage-server/program/common"
+	"etcd-manage-server/program/logger"
+	"etcd-manage-server/program/models"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )

@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/etcd-manage/etcd-manage-server/program"
+	"etcd-manage-server/program"
 )
 
 func main() {

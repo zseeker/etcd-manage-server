@@ -7,7 +7,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/etcd-manage/etcd-manage-server/program/logger"
+	"etcd-manage-server/program/logger"
 	"github.com/etcd-manage/etcd-manage-ui/tpls"
 	gin "github.com/gin-gonic/gin"
 )

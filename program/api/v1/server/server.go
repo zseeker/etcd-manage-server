@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/etcd-manage/etcd-manage-server/program/common"
-	"github.com/etcd-manage/etcd-manage-server/program/logger"
-	"github.com/etcd-manage/etcd-manage-server/program/models"
+	"etcd-manage-server/program/common"
+	"etcd-manage-server/program/logger"
+	"etcd-manage-server/program/models"
 	"github.com/etcd-manage/etcdsdk/etcdv3"
 	"github.com/etcd-manage/etcdsdk/model"
 	"github.com/gin-gonic/gin"

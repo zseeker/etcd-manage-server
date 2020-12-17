@@ -1,12 +1,12 @@
 package v1
 
 import (
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/keys"
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/passport"
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/server"
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/setings/role"
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/setings/user"
-	"github.com/etcd-manage/etcd-manage-server/program/api/v1/upload"
+	"etcd-manage-server/program/api/v1/keys"
+	"etcd-manage-server/program/api/v1/passport"
+	"etcd-manage-server/program/api/v1/server"
+	"etcd-manage-server/program/api/v1/setings/role"
+	"etcd-manage-server/program/api/v1/setings/user"
+	"etcd-manage-server/program/api/v1/upload"
 	gin "github.com/gin-gonic/gin"
 )
 

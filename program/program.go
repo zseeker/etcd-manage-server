@@ -5,11 +5,11 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/etcd-manage/etcd-manage-server/program/api"
-	v1 "github.com/etcd-manage/etcd-manage-server/program/api/v1"
-	"github.com/etcd-manage/etcd-manage-server/program/config"
-	"github.com/etcd-manage/etcd-manage-server/program/logger"
-	"github.com/etcd-manage/etcd-manage-server/program/models"
+	"etcd-manage-server/program/api"
+	v1 "etcd-manage-server/program/api/v1"
+	"etcd-manage-server/program/config"
+	"etcd-manage-server/program/logger"
+	"etcd-manage-server/program/models"
 )
 
 // Program 主程序

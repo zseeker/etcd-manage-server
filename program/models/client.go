@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/etcd-manage/etcd-manage-server/program/config"
+	"etcd-manage-server/program/config"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 )

@@ -12,9 +12,9 @@ import (
 
 	"github.com/jinzhu/gorm"
 
-	"github.com/etcd-manage/etcd-manage-server/program/cache"
-	"github.com/etcd-manage/etcd-manage-server/program/logger"
-	"github.com/etcd-manage/etcd-manage-server/program/models"
+	"etcd-manage-server/program/cache"
+	"etcd-manage-server/program/logger"
+	"etcd-manage-server/program/models"
 	"github.com/etcd-manage/etcdsdk"
 	"github.com/etcd-manage/etcdsdk/model"
 	"github.com/gin-gonic/autotls"

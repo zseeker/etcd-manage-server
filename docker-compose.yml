@@ -2,9 +2,12 @@ version: '3'
 
 services:
   etcd-manage:
-    image: "shiguanghuxian/etcd-manage"
-    volumes:
-      - ./bin/config/cfg.toml:/app/config/cfg.toml
-      - ./bin/logs:/app/logs
+    image: shiguanghuxian/etcd-manage:2.0.0
+    container_name: etcd-manage
+    restart: always
     ports:
       - "10280:10280"
+    volumes:
+      - /etcd/config/cfg.toml:/app/config/cfg.toml
+      - /etcd/logs:/app/logs
+      - /etc/localtime:/etc/localtime:ro
